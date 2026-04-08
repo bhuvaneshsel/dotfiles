@@ -78,3 +78,7 @@ end, { desc = "[F]ind in Document [D]iagnostics" })
 vim.keymap.set("n", "<leader>e", function()
 	vim.diagnostic.open_float()
 end, { desc = "[E] Show Diagnostics" })
+
+vim.keymap.set("n", "<leader>fh", function()
+	require("fzf-lua").highlights()
+end, { desc = "Find highlight groups" })
